@@ -1,0 +1,11 @@
+#OnInit do
+
+1) Check if hMailServer service can be found
+2) Check Service status of hMailServer (running, stopped, not accessible) 
+3) Find hMailServer bin path by Registry Service entry path
+4) Read hMailServer.ini and find its log files directory
+5) List all files in logdirectory with *.log extension
+6) Scan for file locks by hMailServer Process by WinAPI
+7) Load the locked file with WinAPI _fsopen + share flag
+8) fscan line by line of the current logfile which matches a search pattern
+9) If pattern was found, check the source ip and block it via WinAPI Filter Engine (Vista and above)
