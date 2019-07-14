@@ -116,10 +116,11 @@ CString hMSUtils::gethMSCurrentLogFile()
 			// dont list directory dots			
 		}
 		else {
-			if (!wcscmp(ffd.cFileName, L"hmailserver_awstats.log") == 0 &
-				!wcscmp(ffd.cFileName, L"hmailserver_events.log") == 0 &
-				!wcscmp(ffd.cFileName, L"hmailserver_backup.log") == 0) 
-			    {			    
+			if (
+			   (!wcscmp(ffd.cFileName, L"hmailserver_awstats.log") == 0) &
+			   (!wcscmp(ffd.cFileName, L"hmailserver_events.log") == 0) &
+			   (!wcscmp(ffd.cFileName, L"hmailserver_backup.log") == 0) 
+			 ) {			    
 				int x = 1;
 				HANDLE hFile;
 				hFile = CreateFile(ffd.cFileName,
