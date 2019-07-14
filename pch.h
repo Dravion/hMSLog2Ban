@@ -24,6 +24,4 @@
 #include <iostream>
 #include <atlconv.h> 
 #include "hMSUtils.h"
-
-// #include "PacketFilter.h."
 #endif //PCH_H

@@ -23,10 +23,12 @@ obj/
 .vs/*
 debug/*
 release/*
+x64/*
 *.vcxproj.filters
 *.vcxproj.filters
 hMSLog2Ban.vcxproj.user
 *.sdf
+*.sln
 *.opensdf
 *.ipch
 
